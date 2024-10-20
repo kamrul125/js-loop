@@ -1,11 +1,11 @@
-// Write a function called addNumbers that takes two numbers as parameters and returns their sum.
+// 1. Write a function called addNumbers that takes two numbers as parameters and returns their sum.
 
 function addNumbers(num1, num2) {
     return num1 + num2;
 }
 console.log (addNumbers( 10, 8));
 
-// Write a function called sumUpToN that takes a number n and returns the sum of all numbers from 1 to n. Use a loop.
+// 2. Write a function called sumUpToN that takes a number n and returns the sum of all numbers from 1 to n. Use a loop.
 
 function sumUpToN(n) {
     let sum = 0; 
@@ -18,7 +18,7 @@ function sumUpToN(n) {
 }
 console.log(sumUpToN(5));
 
-// Write a function called sumArray that takes an array of numbers as a parameter and returns the sum of all the numbers in the array.
+// 3. Write a function called sumArray that takes an array of numbers as a parameter and returns the sum of all the numbers in the array.
 
 function sumArray(arr) {
     let sum = 0;  
