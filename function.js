@@ -37,15 +37,15 @@ console.log(sumArray ( [ 1, 2, 3, -4, 5 ]));
 // 4. Write a function called countEvenNumbers that takes an array of numbers as a parameter and returns the count of even numbers in the array.
 
 function countEvenNumbers(arr) {
-    let count = 0;  // Initialize the count to 0
+    let count = 0;  
 
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] % 2 === 0) {
-            count++;  // Increment count if the number is even
+            count++;  
         }
     }
 
-    return count;  // Return the final count
+    return count;  
 }
 
 console.log(countEvenNumbers([1, 2, 3, 4, 5, 6])); 
