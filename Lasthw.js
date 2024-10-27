@@ -66,8 +66,8 @@ console.log(extractSlice("OpenAI ChatGPT", 7, 11));
 // the values into variables and log them to the console.
 
 const person = {
-    name: "John Doe",
-    email: "johndoe@example.com",
+    name: "Md Kamruzzaman",
+    email: "kamrul.bubtr@gmail.com",
     age: 30
 };
 const { name, email, age } = person;
