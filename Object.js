@@ -146,13 +146,13 @@
 // 5. Given an object with properties name, email, and age, use destructuring to extract
 // the values into variables and log them to the console.
 
-const person = {
-    name: "John Doe",
-    email: "johndoe@example.com",
-    age: 30
-};
-const { name, email, age } = person;
+// const person = {
+//     name: "John Doe",
+//     email: "johndoe@example.com",
+//     age: 30
+// };
+// const { name, email, age } = person;
 
-console.log(name); 
-console.log(email);
-console.log(age); 
+// console.log(name); 
+// console.log(email);
+// console.log(age); 

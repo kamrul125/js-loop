@@ -54,18 +54,18 @@
 // // 5. Write a function called stringLength that takes a string as a parameter and returns the length of the string.
 
 
-function countEvenNumbers(arr) {
-    let count = 0;  // Initialize the count to 0
+// function countEvenNumbers(arr) {
+//     let count = 0;  // Initialize the count to 0
 
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 === 0) {
-            count++;  // Increment count if the number is even
-        }
-    }
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 === 0) {
+//             count++;  // Increment count if the number is even
+//         }
+//     }
 
-    return count;  // Return the final count
-}
-console.log(countEvenNumbers([1, 2, 3, 4, 5, 6]));
+//     return count;  // Return the final count
+// }
+// console.log(countEvenNumbers([1, 2, 3, 4, 5, 6]));
 
 
 

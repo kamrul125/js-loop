@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>practice js</title>
-  </head>
-  <body>
-    <h1 id="title"></h1>
-    <script src="./index.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .comment-box{
+            width: 20%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            resize: none;
+            font-size: 16px;
+        }
+        .submit-btn {
+            width: 10%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+      
+  </style>
+    <div class="comment-box-container">
+        <h1>Leave a Comment</h1>
+        <div class="comments-list" id="commentsList">
+            <!-- Comments will be displayed here -->
+        </div>
+        <br>
+        <input type="text"id="commentBox" class="comment-box" placeholder="Write your comment here..."><br><br>
+        <button class="submit-btn" onclick="addComment()">Post Comment</button>
+
+      
+    </div>
+    <script>
+        function addComment() {
+            const commentBox = document.getElementById("commentBox");
+            const commentsList = document.getElementById("commentsList");
+
+            const commentText = commentBox.value.trim();
+            
+            if (commentText) {
+               
+                const comment = document.createElement("div");
+                comment.classList.add("comment");
+                comment.textContent = commentText;
+
+            
+                commentsList.appendChild(comment);
+
+                
+                commentBox.value = '';
+            } else {
+                alert("Please write a comment before posting!");
+            }
+        }
+    </script>
+    <script src="index.js"></script>
+</body>
 </html>
