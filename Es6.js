@@ -33,7 +33,7 @@ console.log( "Maximum Value:", maxNumber);
 //  Also, destructure an array of five numbers to get the first two elements.
 
 
-const person = { name: "Alice", age: 25, Country: "Bangladesh" };
+const person = { name: "Shanta", age: 25, Country: "Bangladesh" };
 const { name, age, Country} = person;
 
 console.log(name);
@@ -47,18 +47,18 @@ console.log(b);
 
 // 5. Access the city property of a nested object using both dot notation and optional chaining.
 const user = {
-    name: "Alice",
+    name: "Kamrul",
     address: {
-        city: "Paris",
-        country: "France"
+        city: "Rangpur",
+        country: "Bangladesh"
     }
 };
-using Dot Notation
+// using Dot Notation
 
 const city = user.address.city;
 console.log(city);
 
-using Optional Chaining
+// using Optional Chaining
 
 const city = user.address?.city;
 console.log(city);
@@ -66,10 +66,10 @@ console.log(city);
 // 6.Given an array of student objects with properties name and marks, use:map() to extract the names.
 
 const students = [
-    { name: "Alice", marks: 85 },
-    { name: "Bob", marks: 78 },
-    { name: "Charlie", marks: 92 },
-    { name: "David", marks: 88 }
+    { name: "Kamrul", marks: 85 },
+    { name: "Rafi", marks: 78 },
+    { name: "Rahim", marks: 92 },
+    { name: "Karim", marks: 88 }
 ];
 const studentNames = students.map(student => student.name);
 const studentMarks = students.map(student => student.marks);
@@ -80,10 +80,10 @@ console.log(studentMarks);
 // 6. filter() to return students with marks above 80.
 
 const students = [
-    { name: "Alice", marks: 85 },
-    { name: "Bob", marks: 55 },
-    { name: "Charlie", marks: 92 },
-    { name: "David", marks: 45 }
+    { name: "Kamrul", marks: 85 },
+    { name: "Rafi", marks: 55 },
+    { name: "Kader", marks: 92 },
+    { name: "Rafiq", marks: 45 }
 ];
 
 const passedStudents = students.filter(student => student.marks > 80);
